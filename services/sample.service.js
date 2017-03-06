@@ -4,11 +4,11 @@
 	angular.module('starterApp')
 		.service('SampleService', constructor);
 		    function constructor() {
-		    	var teamList = ['South Africa',	'Australia', 'New Zealand', 'India', 'England',	'Sri Lanka',
+		    	/*var teamList = ['South Africa',	'Australia', 'New Zealand', 'India', 'England',	'Sri Lanka',
 		    					'Bangladesh', 'Pakistan', 'West Indies', 'Afghanistan' , 'Zimbabwe', 'Ireland']
 				function getTeams(){
 			        return teamList
-			    };
+			    };*/
 
 			    function createMap(htmlReferenceId,center) {
 		            var mapOptions = {
@@ -32,7 +32,7 @@
 			        });
 		        }
 
-			    this.getTeams = getTeams;
+			    //this.getTeams = getTeams;
 			    this.createMap = createMap;
 			    this.createMarker = createMarker; 
 		    }//End of constructor

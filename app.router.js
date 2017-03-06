@@ -7,14 +7,15 @@
                     $stateProvider
                     .state('home', {
                         url: '/',
-                        templateUrl: 'views/home.view.html',
-                        controller: 'homeController',
+                        templateUrl: 'views/map.view.html',
+                        controller: 'mapController',
                         controllerAs: 'vm'
+                        
                     })
                     .state('about', {
                         url: '/about',
-                        templateUrl: 'views/about.view.html',
-                        controller: 'aboutController',
+                        templateUrl: 'views/home.view.html',
+                        controller: 'homeController',
                         controllerAs: 'vm'
                     });
                     $locationProvider.hashPrefix('');

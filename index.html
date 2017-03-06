@@ -46,7 +46,7 @@
     <!--app components-->
     <script src="app.module.js"></script>
     <script src="controllers/home.controller.js"></script>
-    <script src="controllers/about.controller.js"></script>
+    <script src="controllers/map.controller.js"></script>
     <script src="controllers/main.controller.js"></script>
     <script src="factories/sample.factory.js"></script>
     <script src="services/sample.service.js"></script>
@@ -56,16 +56,6 @@
 
 </head>
 <body ng-controller="mainController as vm">
-   <!--  <md-toolbar style="padding-left: 20px;" layout="row" >
-     <h1>Angular App Starter</h1>
-   </md-toolbar> -->
-
-    <!-- <div flex layout="row">
-        <md-content flex id="content">
-           <div ui-view=""></div>
-        </md-content>
-    </div> -->
-
        <md-content id="content" layout="column"  style="height: 100%">
             <!-- <md-toolbar layout="row" class="toolbar">
                 <md-button class="menu" ng-click="vm.toggleList();" aria-label="navigation links">
