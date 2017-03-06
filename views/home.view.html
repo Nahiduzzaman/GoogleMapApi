@@ -1,0 +1,210 @@
+﻿<div id="map"></div>
+
+<div class="md-padding" style="padding-bottom: 0px">
+	<div style="font-size: 50px;padding: 2px;">
+		Dashboard
+	</div>
+</div>
+<div class="md-padding" layout-gt-xs="row">
+	<div flex-xs flex-gt-xs="50">
+		<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+		<md-card-title>
+		  <md-card-title-text>
+		    <span class="md-headline">Earnings</span>
+		    <span class="md-subhead">This Month</span>
+		  </md-card-title-text>
+		  <div style="padding: 20px">
+		  	 REPORTS
+		  </div>
+		</md-card-title>
+		<md-card-content>
+			<div class="legend">
+				<i class="fa fa-circle" style="color: rgba(255,105,180,0.4);" aria-hidden="true"></i> Gross Revenew 
+				<i class="fa fa-circle" style="color: rgba(0,255,0,1.0);" aria-hidden="true"></i> Net Revenew
+			</div>
+		    <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick"> </canvas>
+		</md-card-content>
+
+		<md-card-footer>
+		   <div layout="row" layout-sm="column" style="text-align: center;">
+			  <div flex>
+			    <b>Gross Revenew</b><br>
+			   	<span class="gross">135K</span>
+			  </div>
+			  <div flex>
+			    <b>Net Revenew</b><br>
+			   	<span class="net">55K</span>
+			  </div>
+			</div>
+		</md-card-footer>
+		</md-card>
+		<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+		    <md-card-title>
+		      <md-card-title-text>
+		        <span class="md-headline">Transactions</span>
+		        <span class="md-subhead">Latest from statement</span>
+		      </md-card-title-text>
+		      <div style="padding: 20px">
+		      	 STATEMENT
+		      </div>
+		    </md-card-title>
+		   
+			<md-list flex>
+		        <md-list-item class="border-bottom_item" ng-click="null">
+		           <div class="transaction_date">12 Jan, 2017</div>
+		           <p style="text-align: center;font-weight: bold;"><b>Adam McKenze</b></p>
+		           <span flex></span>
+		           <p style="text-align: right;color: blue">#25555</p>
+		           <p style="text-align: right;width: 0px;font-weight: bold;">$50</p>
+		        </md-list-item>
+		        <md-list-item class="border-bottom_item" ng-click="null">
+		           <div class="transaction_date">12 Jan, 2017</div>
+		           <p style="text-align: center;font-weight: bold;"><b>Adam McKenze</b></p>
+		           <span flex></span>
+		           <p style="text-align: right;color: blue">#25555</p>
+		           <p style="text-align: right;width: 0px;font-weight: bold;">$50</p>
+		        </md-list-item>
+		        <md-list-item class="border-bottom_item" ng-click="null">
+		           <div class="transaction_date">12 Jan, 2017</div>
+		           <p style="text-align: center;font-weight: bold;"><b>Adam McKenze</b></p>
+		           <span flex></span>
+		           <p style="text-align: right;color: blue">#25555</p>
+		           <p style="text-align: right;width: 0px;font-weight: bold;">$50</p>
+		        </md-list-item>
+		        <md-list-item class="border-bottom_item" ng-click="null">
+		           <div class="transaction_date">12 Jan, 2017</div>
+		           <p style="text-align: center;font-weight: bold;"><b>Adam McKenze</b></p>
+		           <span flex></span>
+		           <p style="text-align: right;color: blue">#25555</p>
+		           <p style="text-align: right;width: 0px;font-weight: bold;">$50</p>
+		        </md-list-item>
+		        
+		    </md-list>
+		    
+		</md-card>
+	</div>
+    <div flex-xs flex-gt-xs="50">
+	    <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+	        <md-card-title>
+	          <md-card-title-text>
+	            <span class="md-headline">My Courses</span>
+	            <span class="md-subhead">Your recent courses</span>
+	          </md-card-title-text>
+	        </md-card-title>
+	       
+        	<md-list>
+                <md-list-item class="border-bottom_item" ng-click="null">
+                   <div>
+				    Basic HTML
+				  </div>
+				  <div >
+				    <md-progress-linear md-mode="determinate" value="30"></md-progress-linear>
+				  </div>
+                </md-list-item>
+                <md-list-item class="border-bottom_item" ng-click="null">
+                   <div>
+				    Angular Material
+				  </div>
+				  <div>
+				    <md-progress-linear md-mode="determinate" value="70"></md-progress-linear>
+				  </div>
+                </md-list-item>  
+                <md-list-item class="border-bottom_item layout-row layout-align-space-between-center" ng-click="null">
+                   <div style="margin-right:16px;">
+				    Angular JS Steps
+				  </div>
+				  <div style="width: 200px;">
+				    <md-progress-linear md-mode="determinate" value="60"></md-progress-linear>
+				  </div>
+                </md-list-item>                  
+            </md-list>
+
+            <md-card-actions layout="row" layout-align="end center">
+	          <md-button class="md-raised">View All</md-button>
+	          <md-button class="md-raised md-primary">Create Course <span class="fa fa-plus"></span></md-button>
+	        </md-card-actions>
+	        
+	    </md-card>
+
+	    <div style="padding: 8px;">
+	    	<span class="md-headline">Comments</span><br>
+	    	<span class="md-subhead">Latest students comments</span>
+	   	</div>
+
+	    <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+	     	<md-list>
+	     		<md-list-item class="md-3-line border-bottom_item" ng-click="null">	          
+		          <div style="padding-top: 10px;">
+		          	<div layout="row" flex>
+		          		<img style="margin: 4px 15px 0px 0px;width: 30px;height: 30px;" src="styles/images/profile.jpg" align="left" class="md-avatar" alt="avatar" />
+		          		<b class="commenter">Min Li Chan</b>
+	  					<b class="comment-time">24 Hours ago</b>
+	  					<span flex></span>
+						<i class="fa fa-reply" aria-hidden="true" style="margin-top:10px"></i>
+		          	</div>
+		          	<div>
+						<p class="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+					</div>
+					<div>
+						<b style="color: #7f7f7f">Course:</b> <b style="color: #2196F3">Basic HTML</b>
+					</div>
+		          </div>
+	        	</md-list-item>
+		        <md-list-item class="md-3-line border-bottom_item" ng-click="null">	          
+		          <div style="padding-top: 10px;">
+		          	<div layout="row" flex>
+		          		<img style="margin: 4px 15px 0px 0px;width: 30px;height: 30px;" src="styles/images/profile.jpg" align="left" class="md-avatar" alt="avatar" />
+		          		<b class="commenter">Min Li Chan</b>
+	  					<b class="comment-time">24 Hours ago</b>
+	  					<span flex></span>
+						<i class="fa fa-reply" aria-hidden="true" style="margin-top:10px"></i>
+		          	</div>
+		          	<div>
+						<p class="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+					</div>
+					<div>
+						<b style="color: #7f7f7f">Course:</b> <b style="color: #2196F3">Basic HTML</b>
+					</div>
+		          </div>
+		        </md-list-item>
+		        <md-list-item class="md-3-line border-bottom_item" ng-click="null">	          
+		          <div style="padding-top: 10px;">
+		          	<div layout="row" flex>
+		          		<img style="margin: 4px 15px 0px 0px;width: 30px;height: 30px;" src="styles/images/profile.jpg" align="left" class="md-avatar" alt="avatar" />
+		          		<b class="commenter">Min Li Chan</b>
+	  					<b class="comment-time">24 Hours ago</b>
+	  					<span flex></span>
+						<i class="fa fa-reply" aria-hidden="true" style="margin-top:10px"></i>
+		          	</div>
+		          	<div>
+						<p class="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+					</div>
+					<div>
+						<b style="color: #7f7f7f">Course:</b> <b style="color: #2196F3">Basic HTML</b>
+					</div>
+		          </div>
+		        </md-list-item>
+		        <md-list-item class="md-3-line border-bottom_item" ng-click="null">	          
+		          <div style="padding-top: 10px;">
+		          	<div layout="row" flex>
+		          		<img style="margin: 4px 15px 0px 0px;width: 30px;height: 30px;" src="styles/images/profile.jpg" align="left" class="md-avatar" alt="avatar" />
+		          		<b class="commenter">Min Li Chan</b>
+	  					<b class="comment-time">24 Hours ago</b>
+	  					<span flex></span>
+						<i class="fa fa-reply" aria-hidden="true" style="margin-top:10px"></i>
+		          	</div>
+		          	<div>
+						<p class="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+					</div>
+					<div>
+						<b style="color: #7f7f7f">Course:</b> <b style="color: #2196F3">Basic HTML</b>
+					</div>
+		          </div>
+		        </md-list-item>   
+	     	</md-list>
+	    </md-card>
+		<div layout layout-padding layout-align="center end" style="height:200px">
+			<md-checkbox ng-model="showDarkTheme">Use 'Dark' Themed Cards</md-checkbox>
+		</div>
+    </div>
+</div>

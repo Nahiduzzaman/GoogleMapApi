@@ -1,0 +1,230 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/** Enabled Step 3... */
+
+md-toolbar {
+    min-height: 56px;
+    width: 100%;
+}
+
+.toolbar{
+  background: #fafafa !important;
+  border-bottom: 1px solid rgb(221, 221, 221) !important;
+}
+
+md-list-item > button {
+  width:100%;
+  text-align:left !important;
+}
+
+
+.avatar {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px;
+  vertical-align: middle;
+  zoom:0.70;
+  transform: translateZ(0);
+  -webkit-transform: scale(0.70);
+  -moz-transform:scale(0.70);
+}
+.share {
+  position :absolute;
+  zoom: 2.0;
+  top: 10px;
+  right: 10px
+
+}
+
+.lightgreen{
+  background: lightgreen;
+}
+
+.lightblue{
+  background: lightblue;
+}
+
+.logo {
+	text-align: center;
+    font-size: 215%;
+    padding: 10px;
+    background: rgb(55, 95, 207);
+    color: white;
+    font-family: initial;
+}
+
+md-sidenav{
+	width: 246px;
+	background-color: rgba(0, 0, 0, 0.81);
+}
+
+md-menu-bar {
+    padding: 7px 20px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.instructor{
+	text-align: center;
+  border-bottom: 2px solid rgba(255, 252, 247, 0.05);
+  padding: 30px;
+}
+
+.instructor-image{
+}
+
+.profile{
+	width: 65px;
+  border-radius: 50%;
+  border: 2px solid white
+}
+
+.name{
+	padding: 5px;
+    color: white;
+    font-size: 25px;
+}
+
+.side-menu md-list{
+	list-style-type: none;
+	color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu{
+  background: #c1c1c1;
+}
+
+.side-menu md-list-item._md-button-wrap>div.md-button:first-child .md-list-item-inner {
+    margin-left: 15px;
+    width: 100%;
+    min-height: inherit;
+}
+
+.menudemoCustomTrigger .md-menu-demo {
+  padding: 24px; }
+
+.menudemoCustomTrigger .menu-demo-container {
+  min-height: 200px; }
+
+ .carddemoBasicUsage .card-media {
+  background-color: #999999; }
+
+.notification{
+    padding: 15px 10px 5px 10px;
+    border-left: 1px solid rgba(0,0,0,.12);
+}
+
+.notification img{
+  width: 35px;
+  margin-top: -7px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+md-card md-card-title {
+    padding: 10px 10px 10px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.chart{
+  height: 100%;
+  padding-top: 20px;
+}
+
+.legend{
+  display: inline-block;
+  background: rgba(16, 16, 16, 0.07);;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+
+md-card md-card-title+md-card-content {
+    padding: 10px 10px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.gross{
+    font-size: 45px;
+    color: #ff69b4;
+}
+
+.net{
+    font-size: 45px;
+    color: #14ab14;
+}
+
+md-list-item._md-button-wrap>div.md-button:first-child {
+  padding: 0 10px;
+}
+
+.transaction_date{
+    background: #dddddd;
+    padding: 0px 5px;
+    border-radius: 2px;
+}
+
+md-list{
+  padding: 0px;
+}
+
+.border-bottom_item{
+  border-bottom: 1px solid #efefef;
+}
+
+md-card md-card-title md-card-title-text:only-child .md-subhead {
+    padding-top: 0px;
+}
+
+.comment{
+    margin: 10px 0px 0px 0px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+.commenter{
+  font-size: 16px;
+    color: #2196F3;
+    margin-right: 10px
+}
+
+.comment-time{
+  color: #b1b1b1;
+  font-size: 12px;
+}
+
+.round{
+    border-radius: 15px;
+    padding: 3px;
+    background: #2196F3;
+    color: white;
+}
+
+footer {
+  background-color: #ccc;
+}
+.practice{
+    background: red;
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+}
+#map {
+  height: 100%;
+}
+      /* Optional: Makes the sample page fill the window. */
+  

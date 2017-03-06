@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    
+
+    <!--ng-material css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.3/angular-material.min.css">
+    <!--md-data-table css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material-data-table/0.10.10/md-data-table.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--bootstrap components-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!--chartjs-->
+    
+    
+    <!--angular components-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-chart.js/1.1.1/angular-chart.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.3/angular-material.min.js"></script>
+    <!--md-data-table js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material-data-table/0.10.10/md-data-table.js"></script>
+
+    
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUVJA8v4JfEDSYYqPkXq3IPFAWFseMvQk">
+    </script>
+    
+    <!--app components-->
+    <script src="app.module.js"></script>
+    <script src="controllers/home.controller.js"></script>
+    <script src="controllers/about.controller.js"></script>
+    <script src="controllers/main.controller.js"></script>
+    <script src="factories/sample.factory.js"></script>
+    <script src="services/sample.service.js"></script>
+    <script src="directives/sample.directive.js"></script>
+    <script src="app.router.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-controller="mainController as vm">
+   <!--  <md-toolbar style="padding-left: 20px;" layout="row" >
+     <h1>Angular App Starter</h1>
+   </md-toolbar> -->
+
+    <!-- <div flex layout="row">
+        <md-content flex id="content">
+           <div ui-view=""></div>
+        </md-content>
+    </div> -->
+
+       <md-content id="content" layout="column"  style="height: 100%">
+            <!-- <md-toolbar layout="row" class="toolbar">
+                <md-button class="menu" ng-click="vm.toggleList();" aria-label="navigation links">
+                    <md-icon md-svg-src="styles/images/svg/menu.svg"></md-icon>
+                </md-button>
+                
+                <md-menu-bar>
+                    <md-menu>
+                        <button ng-click="$mdMenu.open()">
+                        Forum
+                        </button>
+                        <md-menu-content>
+                            <md-menu-item ng-repeat="item in [1, 2, 3]">
+                                <md-button>
+                                  Option {{item}}
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+            
+                    <md-menu>
+                        <button ng-click="$mdMenu.open()">
+                        Courses
+                        </button>
+                        <md-menu-content>
+                            <md-menu-item ng-repeat="item in [1, 2, 3]">
+                                <md-button>
+                                  Option {{item}}
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </md-menu-bar>
+            
+              
+                
+                <span flex></span>
+                <div class="notification">
+                  <span class="fa fa-bell-o" style="padding: 0px 5px;color: black" aria-hidden="true"></span>
+                  <span class="round" style="font-size: 15px">14</span>
+                </div>
+                <div class="notification">
+                  <img align="left" src="styles/images/profile.jpg">
+                  <b style="color: black;">Rose</b>
+                </div>
+            </md-toolbar> -->
+
+            <div ui-view style="height: 100%"></div>
+       </md-content>
+
+</body>
+</html>
