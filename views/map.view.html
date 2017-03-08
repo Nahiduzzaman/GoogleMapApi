@@ -1,1 +1,12 @@
-﻿<div id="map"></div>
+﻿
+	<div class="search-bar md-whiteframe-7dp">
+		<input id="location-search" type="text" placeholder="Search for location">
+		<md-button ng-click="vm.placeSearchWithButtonClick()" aria-label="search" class="md-icon-button btn-search">
+		    Search
+		</md-button>
+		<div class="splict"></div>
+		<md-button ng-click="vm.removeSearchPlaceText()" class="md-icon-button btn-close">
+		    X
+		</md-button>
+	</div>
+	<div id="map"></div>

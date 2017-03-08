@@ -227,4 +227,32 @@ footer {
   height: 100%;
 }
       /* Optional: Makes the sample page fill the window. */
-  
+.search-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+    background: #fff;
+    box-sizing: border-box;
+    max-width: 385px;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+}
+
+.splict {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+}
+
+#location-search {
+    background-color: #fff;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    padding: 10px 90px 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}  

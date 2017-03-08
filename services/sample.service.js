@@ -32,9 +32,17 @@
 			        });
 		        }
 
+		        function createAutoCompletePlaceSearchBox(htmlRefId, onAutoCompletePlaceSearchBox) {
+		            var autoCompletePlaceSearchBox = new google.maps.places.Autocomplete(document.getElementById(htmlRefId), {
+		                componentRestrictions: null
+		            });
+		            onAutoCompletePlaceSearchBox(autoCompletePlaceSearchBox);
+		        }
+
 			    //this.getTeams = getTeams;
 			    this.createMap = createMap;
-			    this.createMarker = createMarker; 
+			    this.createMarker = createMarker;
+			    this.createAutoCompletePlaceSearchBox = createAutoCompletePlaceSearchBox; 
 		    }//End of constructor
 
 })(window.angular);
