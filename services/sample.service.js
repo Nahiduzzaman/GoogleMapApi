@@ -30,6 +30,7 @@
 			          position: geoCoordinate,
 			          map: type
 			        });
+			        return marker;
 		        }
 
 		        function createAutoCompletePlaceSearchBox(htmlRefId, onAutoCompletePlaceSearchBox) {

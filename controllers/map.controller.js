@@ -29,9 +29,11 @@
 	    		var geoPosition = {lat: 37.09, lng: -95.71}; //usa
 
                 googleMapGeoComponentsRef["Map"] = SampleService.createMap('map',geoPosition);                
-                SampleService.createMarker(geoPosition,googleMapGeoComponentsRef["Map"]);
+                var myMarker = SampleService.createMarker(geoPosition,googleMapGeoComponentsRef["Map"]);
+                console.log(typeof(myMarker));
 
                 vm.placeSearchWithButtonClick = placeSearchWithButtonClick;
+		        
 		        function placeSearchWithButtonClick() {
 		            var searchboxText = document.getElementById('location-search').value;
 		            console.log(searchboxText);
@@ -41,6 +43,10 @@
 		                    var lat = data[0].geometry.location.lat();
 		                    var lng = data[0].geometry.location.lng();
 		                    var origin = new google.maps.LatLng(lat, lng);
+		                    myMarker.setPosition(origin);
+		                    myMarker.setVisible(true);
+		                    googleMapGeoComponentsRef["Map"].setZoom(5);
+		            		googleMapGeoComponentsRef["Map"].setCenter(origin);
 		                }
 		            });
 		        }
@@ -58,11 +64,11 @@
 		            else {
 		                vm.searchedLocationPhoto = "http://maps.gstatic.com/tactile/pane/default_geocode-1x.png";
 		            }*/
-		            marker.setPosition(searchedPlace.geometry.location);
-          			marker.setVisible(true);
+		            myMarker.setPosition(searchedPlace.geometry.location);
+          			myMarker.setVisible(true);
 
-		            var latlng = { lat: 47.3820158, lng: 8.566346299999964 };
-		            googleMapGeoComponentsRef["Map"].setZoom(15);
+		            var latlng = searchedPlace.geometry.location;
+		            googleMapGeoComponentsRef["Map"].setZoom(5);
 		            googleMapGeoComponentsRef["Map"].setCenter(latlng);
 		            
 
